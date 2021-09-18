@@ -1,7 +1,13 @@
 FROM nvidia/cuda:11.0-base
 
-RUN apt-get update && apt-get install --yes wget git
-RUN mkdir -p /project
-RUN wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+ARG DEBIAN_FRONTEND=noninteractive
+COPY repo /repo
+COPY project /project
+
+RUN apt-get update && apt-get install -yq wget git vim python3-pip python3.8-venv
+RUN pip install --upgrade pip
+RUN pip install wheel
 
 WORKDIR /project
+
+

@@ -14,5 +14,6 @@
 
 6. https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker
 
+7. conda install nvidiatoolkit
 
-
+8. export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/anaconda3/lib

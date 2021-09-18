@@ -1,4 +1,4 @@
-
-pushd images
+#!/bin/sh
+cd images
 sudo docker build -t anbase ./anbase
-popd
+cd ..
