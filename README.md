@@ -4,9 +4,13 @@
 
 1. sudo apt update
 
-2. sudo apt install zsh vim git
+2. sudo apt install zsh vim git wget
 
 3. sudo ubuntu-drivers autoinstall
+
+   You may need to install kernel source, e.g.
+   sudo apt install nvidia-kernel-source-470
+   to make sure initramfs has installed as it is supposed
 
 4. reboot
 
