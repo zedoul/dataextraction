@@ -1,7 +1,7 @@
 import sys
 import os
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 import argparse
 import pickle
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_model', type=int, default=0)
     parser.add_argument('--save_data', type=int, default=0)
     # target and shadow model configuration
-    parser.add_argument('--n_shadow', type=int, default=5)
+    parser.add_argument('--n_shadow', type=int, default=10)
     parser.add_argument('--target_data_size', type=int, default=int(1e4))
     parser.add_argument('--target_test_train_ratio', type=int, default=1)
     parser.add_argument('--target_model', type=str, default='nn')
